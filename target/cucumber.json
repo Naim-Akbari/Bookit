@@ -3,20 +3,20 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-05-07T12:15:38.463Z",
-        "line": 5,
-        "name": "veriy information about logged user",
+        "start_timestamp": "2022-05-07T12:49:33.922Z",
+        "line": 11,
+        "name": "verify information about logged user from api and database",
         "description": "",
-        "id": "user-verification;veriy-information-about-logged-user",
+        "id": "user-verification;verify-information-about-logged-user-from-api-and-database",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
-            "line": 6,
+            "line": 12,
             "name": "I logged Bookit api using \"sbirdbj@fc2.com\" and \"asenorval\"",
             "match": {
               "arguments": [
@@ -35,10 +35,9 @@
           },
           {
             "result": {
-              "duration": 2813000000,
-              "status": "passed"
+              "status": "skipped"
             },
-            "line": 7,
+            "line": 13,
             "name": "I get the current user information from api",
             "match": {
               "location": "com.bookit.step_definitions.ApiStepDefs.i_get_the_current_user_information_from_api()"
@@ -47,20 +46,11 @@
           },
           {
             "result": {
-              "duration": 2000000,
-              "status": "passed"
+              "status": "undefined"
             },
-            "line": 8,
-            "name": "status code should be 200",
-            "match": {
-              "arguments": [
-                {
-                  "val": "200",
-                  "offset": 22
-                }
-              ],
-              "location": "com.bookit.step_definitions.ApiStepDefs.status_code_should_be(int)"
-            },
+            "line": 14,
+            "name": "the information about the current user form api and database should match",
+            "match": {},
             "keyword": "Then "
           }
         ],

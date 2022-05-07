@@ -46,8 +46,17 @@ public class ApiStepDefs {
     @Then("status code should be {int}")
     public void status_code_should_be(int statusCode) {
 
-        Assert.assertEquals(response.statusCode(), statusCode);
+        Assert.assertEquals(statusCode, response.statusCode());
         System.out.println(statusCode);
+
+    }
+
+    @Then("the information about the current user form api and database should match")
+    public void the_information_about_the_current_user_form_api_and_database_should_match() {
+
+
+
+
 
     }
 

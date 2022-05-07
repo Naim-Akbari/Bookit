@@ -10,7 +10,7 @@ formatter.feature({
   ]
 });
 formatter.scenario({
-  "name": "veriy information about logged user",
+  "name": "verify information about logged user from api and database",
   "description": "",
   "keyword": "Scenario",
   "tags": [
@@ -30,7 +30,7 @@ formatter.match({
   "location": "com.bookit.step_definitions.ApiStepDefs.i_logged_Bookit_api_using_and(java.lang.String,java.lang.String)"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "I get the current user information from api",
@@ -40,16 +40,14 @@ formatter.match({
   "location": "com.bookit.step_definitions.ApiStepDefs.i_get_the_current_user_information_from_api()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "status code should be 200",
+  "name": "the information about the current user form api and database should match",
   "keyword": "Then "
 });
-formatter.match({
-  "location": "com.bookit.step_definitions.ApiStepDefs.status_code_should_be(int)"
-});
+formatter.match({});
 formatter.result({
-  "status": "passed"
+  "status": "undefined"
 });
 });
