@@ -3,8 +3,8 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2022-05-07T11:18:02.505Z",
-        "line": 4,
+        "start_timestamp": "2022-05-07T12:15:38.463Z",
+        "line": 5,
         "name": "veriy information about logged user",
         "description": "",
         "id": "user-verification;veriy-information-about-logged-user",
@@ -13,35 +13,63 @@
         "steps": [
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "I logged Bookit api using \"sbirdbj@fc2.com\" and \"asenorval\"",
-            "match": {},
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"sbirdbj@fc2.com\"",
+                  "offset": 26
+                },
+                {
+                  "val": "\"asenorval\"",
+                  "offset": 48
+                }
+              ],
+              "location": "com.bookit.step_definitions.ApiStepDefs.i_logged_Bookit_api_using_and(java.lang.String,java.lang.String)"
+            },
             "keyword": "Given "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2813000000,
+              "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "I get the current user information from api",
-            "match": {},
+            "match": {
+              "location": "com.bookit.step_definitions.ApiStepDefs.i_get_the_current_user_information_from_api()"
+            },
             "keyword": "When "
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 2000000,
+              "status": "passed"
             },
-            "line": 7,
-            "name": "status code shoud be 200",
-            "match": {},
+            "line": 8,
+            "name": "status code should be 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 22
+                }
+              ],
+              "location": "com.bookit.step_definitions.ApiStepDefs.status_code_should_be(int)"
+            },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
             "name": "@smoke"
+          },
+          {
+            "name": "@wip"
           }
         ]
       }
