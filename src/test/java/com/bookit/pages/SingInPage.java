@@ -17,7 +17,7 @@ public class SingInPage {
     @FindBy (name = "password")
     public WebElement password;
 
-    @FindBy (xpath = "//button[.=sign in']")
+    @FindBy (xpath = "//button[@type='submit']")
     public WebElement signInButton;
 
 
